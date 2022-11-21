@@ -1,0 +1,107 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+html {
+    width: 1200px;
+    max-width: 100%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 0.8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+    letter-spacing: 0.014em;
+}
+
+h2 {
+    font-size: 1.575rem;
+    letter-spacing: 0.011em;
+}
+
+p {
+    width: 800px;
+    max-width: 100%;
+    margin-top: 1em;
+}
+
+.textAnchor {
+    color: black;
+    text-decoration: underline;
+}
+
+.katalog {
+    display: grid;
+    gap: 0.8rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 2.3rem 0;
+}
+
+.karta {
+    color: black;
+    width: 100%;
+    min-height: 384px;
+    padding: 0.8rem;
+    border: 2px solid black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.74);
+    transition: 0.4s ease; 
+    transition-property: all;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.karta:hover {
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    color: white;
+}
+
+.kartaNadpis {
+    font-weight: 900;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.kartaAnotace {
+    font-size: 0.8rem;
+    line-height: 1.3;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
+
+footer {
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    img {
+        width: 180px;
+        max-height: 30px;
+    }
+}
